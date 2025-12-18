@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  p{ 
+    font-family: serif; 
+    size: 150px ;
+    line-height: 1.8;
+   }
+    
+    header{
+      
+      background: linear-gradient(to right, #061c06, #029002); 
+      color: white; 
+        height: 140px;
+        width: 100%;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+        text-align: center;
+position: sticky;
+        font-size: 230%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    nav { 
+    height: 40px;
+    size: 100%;
+    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%; 
+background: linear-gradient(to right, #012601, #029002); 
+      color: white;
+        position: sticky; 
+        top: 10px;
+        text-decoration: solid;
+        
+       }
+       section {
+  margin: 15px 0;
+  border: 1px solid #ddd; 
+  padding: 20px ;
+}
+       nav a:hover {
+   
+  border: 2px solid #04340e; /* Creates the box on hover */
+    
+  
+}
+    a{position: sticky; margin: 10px;
+        color: white;
+        text-align: center;
+    }
+    div {
+        background-color: rgb(230, 250, 230);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border: 2px black solid;
+        padding: 20px;
+      
+
+
+    }
+    
+    #section1 {
+  background-color: rgb(230, 250, 230);
+}
+
+#section2 {
+  background-color: rgb(230, 250, 230);}
+
+#section3 {
+  background-color: rgb(230, 250, 230);
+}
+#section4 {
+  background-color: rgb(230, 250, 230);
+}
+    h2 {
+        font-size: 190%;
+       
+        position: sticky;
+        text-align: center;
+text-decoration: underline;
+    }
+
+.p1 {
+  font-size: 16px; 
+}
+img{
+  display: block; 
+  margin: 20px auto 0;
+  width: 50%; 
+  max-width: 300px;
+  height: auto;
+  padding: 10px ;
+  
+}
+
+.p3 {
+  
+  margin-bottom: 20px; 
+} 
+.image-figure {
+  text-align: center; 
+  margin: 20px auto; 
+}
+.image-caption {
+  font-size: 12px; 
+  color: gray; 
+  margin-top: 5px; 
+}
+video {
+            width: 300px; 
+            height: auto; 
+            border: 2px solid #333;
+            border-radius: 10px; 
+            align-self: center; margin-left: 10%; 
+          
+        }
+        #vid1
+    {  width: 300px; 
+            height: auto; 
+            border: 2px solid #333;
+            border-radius: 10px; 
+            align-self: center; margin-left: 40%;}
+
+</style>
+<body>
+    <header>
+      <h1> WAVE FUNCTION PLOTTER </h1>  
+      
+    </header>
+    <nav>
+        <a href="#section1">Quantum mechanics</a> 
+  <a href="#section2">Wavefunctions</a>
+  <a href="index.html" target="_blank">Wave function plotter</a> 
+<a href="#section3">Applications</a> <a href="#section4">Visualizations </a> 
+  <a href="#section5">Interactive Examples</a><a href="#section6">FAQs</a> <a href="#" > </a>  </nav>
+  <div > <h2>QUANTUM MECHANICS </h2><section id="section1" style="display: flex; align-items: center;">
+
+<p class="p1" style="flex: 1; margin-right: 5px;" >Electrons and other subatomic particles behave as both particles and waves. An individual particle like an electron has mass, but it is spread out, not located in one position, and it has a wavelength. The wavelike nature of electrons and other subatomic particles, as well as the paradox described by Heisenberg’s uncertainty principle, made it impossible to use the equations of classical physics to describe the motion of electrons in atoms. Scientists needed a new approach that took the wave behavior of the electron into account.
+
+    In 1926, an Austrian physicist, Erwin Schrödinger (1887–1961; Nobel Prize in Physics, 1933), developed wave mechanics, a mathematical technique that describes the relationship between the motion of a particle that exhibits wavelike properties and its allowed energies. Schrödinger's wave equation allowed scientists to make predictions about the electronic structure of atoms. Where are the electrons found? What is their energy?
+    
+    Although quantum mechanics uses sophisticated mathematics, you do not need to understand the mathematical details to follow our discussion of its general conclusions. We focus on the properties of the wavefunctions that are the solutions of Schrödinger’s equations.</p>
+    <video autoplay loop muted playsinline id="vid4"> <source src="quan.mp4" type="video/mp4" style="max-width: 100%; height: auto;"></section> </div><div> <h2>WAVEFUNCTIONS </h2><section id="section2" style="display: grid; grid-template-columns: 1fr auto; gap: 5px;"> 
+   
+<p class="p2">A wavefunction (Ψ) is a mathematical function that relates the location of an electron and the energy of the electron. A wavefunction uses three variables to describe the position of an electron in space (as with the Cartesian coordinates x, y, and z). A fourth variable specifies the time at which the electron is at the specified location.
+
+    By analogy, if you were the captain of a ship trying to intercept an enemy submarine, you would need to know its latitude, longitude, and depth, as well as the time at which it was going to be at this position (Figure 1.1.1
+    ). For electrons, we can ignore the time dependence because we will be using standing waves, which by definition do not change with time, to describe the position of an electron. </p>
+  </p> <video autoplay loop muted playsinline id="vid1"> <source src="equa.mp4" type="video/mp4" style="max-width: 100%; height: auto;"></video>
+    <figcaption class="image-caption">Fig 1.1: </figcaption> </figure> 
+
+    <p class="p2" >The magnitude of the wavefunction at a particular point in space is proportional to the amplitude of the wavefunction at that point. Many wavefunctions are complex functions
+        . Hence the amplitude of the wave has no real physical significance.In contrast, the sign of the wavefunction (either positive or negative) corresponds to the phase of the wave, which will be important in our discussion of chemical bonding. The sign of the wavefunction should not be confused with a positive or negative electrical charge.
+        The square of the wavefunction at a given point in space is proportional to the probability of finding an electron at that point in space. The square of the wavefunction (Ψ2
+        ) is always a real quantity. The probability of finding an electron at any point in space depends on several factors, including the distance from the nucleus and, in many cases, the atomic equivalent of latitude and longitude. One way of graphically representing the probability distribution is demonstrated in Figure 1.1.2
+         for a hydrogen atom. The probability of finding an electron is indicated by the density of colored dots.Schrödinger’s approach treats electrons as three-dimensional standing waves. It is a requirement of standing waves that they be in phase with one another to avoid cancellation; this results in a limited number of solutions (wavefunctions), each of which is associated with a particular energy. As in Bohr’s model, the energy of an electron in an atom is quantized; it can have only certain allowed values, which are specified by the quantum numbers. Quantum numbers define solutions to the Schrödinger equation. The major difference between Bohr’s model and Schrödinger’s approach is that Bohr had to impose the idea of quantization arbitrarily, whereas in Schrödinger’s approach, quantization is a natural consequence of describing an electron as a standing wave.</p>
+        </section></div> <div>  <h2>APPLICATIONS  </h2>
+        <section id="section3" style="display: flex; align-items: center;">
+           
+            <P class="p2" style="flex: 1;" >              1. Quantum mechanics uses wave functions to describe the behavior of particles at the atomic level.<br>
+              2. Wave functions play a key role in quantum computing by describing the states of qubits.<br>
+              3. They are utilized in medical imaging techniques like MRI and ultrasound for imaging the human body.<br>
+              4. In optics, wave functions help to understand how light behaves through different media.<br>
+              5. In acoustics, wave functions are used to model sound waves for designing speakers and microphones.<br>
+              6. Semiconductor devices like transistors rely on wave functions to predict electron movement.<br>
+              7. In astronomy, wave functions are used to study cosmic phenomena such as black holes.<br>
+              8. Material science uses wave functions to predict the properties of new materials at the atomic level.<br>
+              9. Engineers use wave functions to simulate and design electronic and photonic devices.<br>
+          </p> <video  autoplay loop muted playsinline> <source src="eqn.mp4" type="video/mp4" controls style="transform: translateX(-100px); width: 100%; height: auto;"></video>
+          </section></div><div>
+          <section id="section4"> <h2> VISUALISATIONS </h2>  <p class="p2" style="flex: 1; margin-right: 5px;">
+                1. Probabilistic Interpretation: Visualizing a wave function allows you to see the probability distribution of a particle’s position, helping you understand where the particle is likely to be found.<br>
+                2. Understanding Quantum States: Wave function visualizations represent quantum states of particles. By plotting the wave function, we can observe how particles evolve in time and space.<br>
+                3. Superposition and Interference: Visualizing wave functions helps in understanding quantum phenomena like superposition and interference, where multiple wave functions combine to form new patterns.<br>
+                4. Time Evolution of Wave Functions: Animations of wave function evolution over time show how quantum systems change, providing insight into concepts like quantum tunneling or particle-wave duality.<br>
+                5. Node and Antinode Representation: In standing waves, visualizations show the locations of nodes (where the wave function is zero) and antinodes (where it reaches maximum amplitude), crucial for understanding resonance in systems like strings or particles in a box.<br>
+                6. Energy Levels: The wave function’s visualization in quantum mechanics helps to illustrate different energy levels in a system. For instance, electron energy levels in atoms can be understood by examining the shapes of the wave functions at different quantum states.<br>
+                7. Wave Function Normalization: Graphical representations of wave functions can help visualize normalization, where the total probability (integral of the squared wave function) is made equal to one.<br>
+                8. Boundary Conditions and Constraints: Visualizations help show how boundary conditions affect wave functions, like how the wave function behaves at the edges of a potential well or at infinity, which is crucial for solving problems like the particle in a box.<br>
+                9. Visualization of Orbital Shapes: For atoms, visualizing wave functions provides a clear picture of the electron orbitals in an atom (such as s, p, d orbitals), helping us understand electron density distributions.<br>
+                10. Comparing Different Wave Functions: By plotting multiple wave functions with different parameters (such as different quantum numbers or potential well depths), visualizations allow easy comparison of how these changes affect the system's behavior.<br>
+            </p> </section></div><div><h2>INTERACTIVE EXAMPLES</h2>
+            <section id="section5"  style="display: flex; align-items: center;">  <p class-="p2"  style="flex: 1; margin-right: 5px;"> Particle in a Box (Infinite Potential Well)
+              The "Particle in a Box" is a fundamental problem in quantum mechanics that demonstrates how quantum particles, such as electrons, behave when confined within a specific region of space. It is often referred to as the Infinite Potential Well because the potential energy of the particle is zero inside the box and infinite outside the box, creating an impenetrable boundary.<br>
+             1. Potential Energy The particle is confined within the box and cannot exist outside it because the potential is infinite. Therefore, the probability of finding the particle outside the box is zero. <br> 2.  Wave Function: The wave function 
+             𝜓
+             (
+             𝑥
+             )
+             ψ(x) describes the state of the particle inside the box. It gives us the probability of finding the particle at a particular position. The wave function must satisfy the Schrödinger equation and the boundary conditions.<br>
+            3. Energy Quantization and Implications
+            The particle's energy is quantized because it can only occupy discrete energy levels. The energy levels depend on the size of the box:
+            
+            The energy is inversely proportional to the square of the box size 
+            𝐿
+            L. The larger the box, the lower the energy levels.
+            The lowest energy state corresponds to 
+            𝑛
+            =
+            1
+            n=1, and this energy is called the ground state. All higher energy levels correspond to excited states.</p> 
+               <img src="img0.gif" alt=""style="width: 100%; height: auto;">  </section></div><div>
+               <section id="section6"> <h2> FAQs </h2><p class="p2">1. What is the Schrödinger Wave Equation?<br>
+                The Schrödinger Wave Equation is a fundamental equation in quantum mechanics that describes how the quantum state of a physical system changes over time. It predicts the behavior of particles like electrons and their probability distributions.<br> 
+                2. Why is the Schrödinger Equation important?<br>
+                It forms the foundation of quantum mechanics, explaining phenomena like atomic structure, chemical bonding, and the behavior of particles at the microscopic level. It helps in predicting physical properties that classical physics cannot.
+                <br>
+                3. What does the wave function (
+                𝜓
+                ) represent?<br>
+                The wave function (
+                𝜓
+                ) provides information about the quantum state of a particle. Its square (
+                ∣
+                𝜓2                2
+                
+                ) represents the probability density, indicating where the particle is likely to be found.<br>
+                
+                4. What are the types of Schrödinger equations?<br> 
+                There are two types:
+                
+                Time-independent Schrödinger Equation: Used for systems in a steady state, where energy does not change with time.
+                Time-dependent Schrödinger Equation: Describes how quantum systems evolve over time.</p> </section>
+</div>
+</body>
+</html>

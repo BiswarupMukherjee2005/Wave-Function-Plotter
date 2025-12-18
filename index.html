@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wave Function Plotter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/mathjs/lib/browser/math.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Wave Function Plotter</h1>
+        <p>Enter a wave function ψ(x) below (e.g., sin(x), exp(-x^2), cos(x)^2):</p>
+        <input type="text" id="waveFunctionInput" placeholder="Enter ψ(x)..." />
+        
+        <p>Set x-axis limits (optional):</p>
+        <input type="number" id="xMinInput" placeholder="x-min" />
+        <input type="number" id="xMaxInput" placeholder="x-max" />
+        
+        <button onclick="plotWaveFunction()">Compute and Plot</button>
+        <p id="error" class="error"></p>
+        
+        <!-- Separate containers for the two plots -->
+        <div id="waveFunctionPlot" class="plot"></div>
+        <p class="example-message"><em>EXAMPLE :: The above graph represents the wavefunction of sin(x) and the below one shows its Probability density.  </em></p>
+        <div id="probabilityDensityPlot" class="plot"></div>
+    </div>
+    <div class="function-box">
+        <h2>Choose a Wave Function</h2>
+        <ul id="functionList">
+            <!-- List of functions will be dynamically added here -->
+        </ul>
+    </div>
+    <div class="operator-box">
+        <h2>Choose an Operator</h2>
+        <ul>
+            <li onclick="applyOperator('+')">Add (+)</li>
+            <li onclick="applyOperator('-')">Subtract (-)</li>
+            <li onclick="applyOperator('*')">Multiply (*)</li>
+            <li onclick="applyOperator('/')">Divide (/)</li>
+            <li onclick="applyOperator('^')">Power (^)</li>
+        </ul>
+        <p>Enter second value/function:</p>
+        <input type="text" id="secondOperand" placeholder="e.g., cos(x), 2" />
+        <button onclick="applySelectedOperator()">Apply</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
